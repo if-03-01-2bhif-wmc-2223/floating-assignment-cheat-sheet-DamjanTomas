@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="This is a CheatSheet" />
+        <meta name="keywords" content="CheatSheet, Classes and Ideas, Floating, Box Model" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CheatSheet - HTML / CSS</title>
+        <link rel="stylesheet" href="design.css">
+    </head>
+    <body>
+    <section>
+        <h1>Box Model</h1>
+        <p> •   Block level elements always starts on a new line<br>
+            •	Block level element can have customized margin and padding<br>
+            •	Block level element can contain other block level element or Inline-level element<br>
+            •	If the width is not manually set, A block level element always takes up full width of its container<br>
+            •	If the height isn't manually set, Block level element's height is adjusted automatically to fit all the content and other elements within itself.
+        </p>
+    </section>
+    <section>
+        <h1 >Classes and Ids</h1>
+        <p>
+            <strong>A selector for a certain class:</strong><br>
+            .class {<br>
+              css declarations;<br>
+            }     
+        </p>
+        <p>
+            <strong>A selector for a certain html element of a certain class:</strong><br>
+            element.class {<br>
+              css declarations;<br>
+            }
+        </p>
+        <p>
+            <strong>A selector for a certain id:</strong><br>
+            #id {<br>
+            css declarations;<br>
+            }
+        </p>
+        <p>
+            <strong>A selector for a certain html element of a certain id:</strong><br>
+            #para1 {<br>
+            text-align: center;<br>
+            color: red;<br>
+            }
+        </p>
+        <p>
+            <strong>The start tag of a certain html element with a specific class:</strong><br>
+            (style)<br>
+            .country {<br>
+            background-color: black;<br>
+            color: white;<br>
+            padding: 8px;<br>
+            }<br>
+            (/style)
+        </p>
+        <p>
+            <strong>The start tag of a certain html element with a specific id:</strong><br>
+            (style)<br>
+            #myHeader {<br>
+            background-color: lightblue;<br>
+            color: black;<br>
+            padding: 40px;<br>
+            text-align: center;<br>
+            }<br>
+            (/style)
+        </p>
+        <p>
+            <strong>Do classes select one or more elements?</strong><br>
+            Multiple HTML elements can share the same class.<br>
+            <strong>Do ids select one or more elements?</strong><br>
+            They select one element<br>
+            <strong>How often can classes / ids occur on one page?</strong><br>
+            ids once. Classes don't have a limit. 
+        </p>
+    </section>
+    <section>
+        <h1>Floating</h1>
+        <p>
+            <strong>Write down the css declaration to make an html element float to the left</strong><br>
+            p{<br>
+            float: left;<br>
+            } 
+        </p>
+        <p>
+            <strong>Make an html element stop floating around another (for a specific direction, for all directions)</strong><br>
+            table, th, td {<br>
+            border: 0.01em;<br>
+            border-color: green;<br>
+            border-style: dashed;<br>
+            border-radius: 5px;<br>
+            }
+       </p>
+    </section>
+    </body>
+</html>

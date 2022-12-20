@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="This is a cheat - sheet" />
+        <meta name="keywords" content="CheatSheet, HTML, CSS" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CheatSheet</title>
+        <link rel="stylesheet" href="design.css">
+    <body>
+        <h1>HTML</h1>
+        <h4>( ) = < ></h4>
+        <p> (!DOCTYPE html) It expresses teh document type, and it helps the browser to show the web pages correctly.<br>
+            (html) The documents begin's and ends with this element.<br>
+            (body) Is the visible part of the document.<br>
+            (h1) It defines the most important heading of a web page.<br>
+            (p) It stands for a paragraph.
+        </p>
+            <p>- <strong>Article</strong> (article) It specifies indepentend, self-contained content. <br>
+                (article)
+                (h2)Google Chrome(/h2)
+                (p)Chrome is a web server released in 2008. It is now the most popular web server.(/p)
+                (/article)</p>
+            <p>- <strong>Body</strong> (body) It's the visible part of the html document.<br>
+                (body)
+                (h1)My Frist Page(/h1)
+                (p)Hello World!(/p)
+                (/body)</p>
+            <p>- <strong>line break</strong> (br) It makes a new line.<br>
+                (p)Hello(br)World(/p)</p>
+            <p>- <strong>Headings</strong> (h1, ...) It defines the most important heading.<br>
+                (h1)Title 1(/h1)
+                (h2)Title 2(/h2)...</p>
+            <p>- <strong>Section with meta-information</strong> (head) The head element is a container for metadata.<br>
+                (head)
+                   (title)Hello World!(/title)
+                (/head)</p>
+            <p>- <strong>Top level element (html)</strong> It represents the root from a HTML document.<br>
+                (html lang=en)
+                (/html)</p>
+            <p>- <strong>Image</strong> named ``Team.jpg`` (img src="Team.jpg") You can insert pictures in the html document.<br>
+                (body)
+                (img src="Team.jpg" width="500" height="600")
+                (body)</p>
+            <p>- <strong>Paragraph</strong> (p) It makes paragraphes.<br>
+                (p)Hello World!(/p)</p>
+            <p>- <strong>Section</strong> (section) It defines a section in a document.<br>
+                (section)
+                   (p)Hello(/p)
+                (section)</p>
+            <p>- <strong>Label appearing in the title bar</strong> (title) The title of the html web page.<br>
+                (head)
+                   (title)Title(title)
+                (head)</p>
+            <p>- <strong>Link</strong> to other pages (a)<br>
+                (a href= ""https://www.google.com"")(/a)</p>
+            <p>- <strong>Comment</strong><br>
+                (!-- This is a comment --)</p>
+            <p>- <strong>Head</strong> with title and meta elements<br>
+                (head)
+                   (title)Title(/title)
+                   (meta charset="UTF-8")<br>
+                (/head)</p>
+            <p>- <strong>Meta</strong><br>
+                (meta charset="UTF-8" /)<br>
+            	(meta name="description" content="This is a life coding training page" /)<br>
+                (meta name="keywords" content="Unit02, HTML, CSS" /)<br>
+                (meta name="viewport" content="width=device-width, initial-scale=1.0" /)</p>
+            <p> -<strong>Link</strong><br>
+                (link rel="stylesheet" href="./styles.css" /)
+                </p>
+            <p>- <strong>Import CSS Files</strong><br>
+                (@import url("basestyles.css");)
+            </p>
+       
+        <h1>CSS</h1>
+        <p>A css rule consists of a selector and a decleration block. Selector: h1 Decleration: {color(property):blue(Value); font-size:12px;}</p>
+        <p>direct child(>); descendant(space); adjacent sibling(+); sibling(~);</p>
+        <p>The descendant selector matches all elements that are descendants of a specified element. The descendant selector is space<br>
+            The child selector selects all elements that are the children of a specified element. The selector is (>)<br>
+            The adjacent sibling selector is used to select an element that is directly after another specific element.<br>
+            Sibling elements must  have the same parent element, and "adjacent" means "immediately following". The selector is (+)</p>
+        <p>tomato = red/ff6347; orange = orange/ffa550; dodgerblue = lightblue/0000ff; mediumseagreen = lightgreen/3cb371; gray = gray/787878; slateblue = purple/6a5acd; violet = pink/ee82ee; lightgray = lightgray/b4b4b4;</p>
+        <p><strong>Declarations for color, background color:</strong><br>
+           body{<br>
+                background-color: lightblue;<br>
+           }<br>
+        h1 {color:blue;}
+        </p>
+        <p><strong>Pseudo classes for the (a) element:</strong><br>
+        a:link {<br>
+            color: #FF0000;<br>
+        }<br>
+        a:visited {<br>
+            color: #00FF00;<br>
+        }<br>
+        a:hover {<br>
+            color: #FF00FF;<br>
+        }<br>
+        a:active {<br>
+            color: #0000FF;<br>
+        } </p>
+        <p><strong>Declaration for background image:</strong><br>
+        body{
+               background-image: url(Test.jpg);
+        }</p>
+        <p><strong>Declaration for text alignment (left, right, center, justify):</strong><br>
+        h1{<br>
+               text-alignment: left;<br>
+        }<br>
+        h2{<br>
+               text-alignment: right;<br>
+        }<br>
+        h3{<br>
+               text-alignment: center;<br>
+        }<br>
+        div{<br>
+               text-alignmnet: justify;<br>
+        }</p>
+        <p><strong>Declaration for text decoration (overline, underline, line-through):</strong><br>
+        h1{<br>
+               text-decoration-line: overline;<br>
+        }<br>
+        h2{<br>
+               text-decoration-line: underline;<br>
+        }<br>
+        h3{<br>
+               text-decoration-line: line-through;<br>
+        }</p>
+        <p><strong>Declaration for text transformation (uppercase, lowercase, capitalize):</strong><br>
+        p.uppercase{<br>
+               text-transform: uppercase;<br>
+        }<br>
+        p.lowercase{<br>
+               text-transform: lowercase;<br>
+        }<br>
+        p.capitalize{<br>
+               text-transform: capitalize;<br>
+        }</p>
+        <p><strong>On computer screens, sans-serif fonts are easier to read than serif fonts.</strong></p>
+        <p><strong>Declarations for font families:</strong><br>
+        p.a{<br>
+               font-family: "Times New Roman", Times, serif;<br>
+        }<br>
+        p.b{<br>
+               font-family: Arial, Helvetica, sans serif;<br>
+        }</p>
+        <p><strong>Declarations for font style normal and italic:</strong><br>
+        p.normal{<br>
+               font-style: normal;<br>
+        }<br>
+        p.italic{<br>
+               font-style: italic;<br>
+        }</p>
+        <p><strong>Declarations for font sizes:</strong><br>
+        h1{<br>
+               font-size: 40px;<br>
+        }</p>
+        <p><strong>Declarations for font weights:</strong><br>
+        p.normal{<br>
+               font-weight: normal;<br>
+        }<br>
+        p.thick{<br>
+               font-weight: bold;<br>
+        }<br>
+        p.thicker{<br>
+               font-weight: 900;<br>
+        }</p>
+    </body>
+   </head>
+</html>
