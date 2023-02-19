@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CheatSheet - CssMasterShip</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="logo">  
+                <p><a href="index.html">Menu</a></p>
+            </div>
+            <ul>    
+                <li><a href="WebServer, WebClient.html">WebServer / WebClient</a></li>
+                <li><a href="Basic HTML,CSS.html">Basic HTML,CSS</a></li>
+                <li><a href="HTML Tables.html">HTML Tables</a></li>
+                <li><a href="Classes and Ids.html">Classes and Ids</a></li>
+                <li><a href="GraphicFormats.html">GraphicFormats</a></li>
+                <li><a href="BootStrapCheatSheet.html">BootStrap</a></li>
+                <li><a href="CheatSheet_CSSMastership.html">MasterShip</a></li>
+            </ul>
+          </nav>
+        <h1>Gradients, Corners, and Shadows</h1>
+        <br>
+        <h3>Gradients</h3>
+        <p>CSS defines three types of gradients:</p>
+        <ul>
+            <strong><li>Linear Gradients (goes down/up/left/right/diagonally)</strong>
+                <p>
+                    To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among.<br> 
+                    You can also set a starting point and a direction (or an angle) along with the gradient effect.<br>
+                    <strong>Example:</strong><br>
+                    #grad {<br>
+                        background-image: linear-gradient(red, yellow, green);<br>
+                      }<br>
+                </p>
+            </li>
+            <strong><li>Radial Gradients (defined by their center)</strong>
+                <p>
+                    A radial gradient is defined by its center.
+                    To create a radial gradient you must also define at least two color stops.<br>
+                    <strong>Example:</strong><br>
+                    #grad {<br>
+                        background-image: radial-gradient(red, yellow, green);<br>
+                      }<br>
+                </p>
+            </li>
+            <strong><li>Conic Gradients (rotated around a center point)</strong>
+                <p>A conic gradient is a gradient with color transitions rotated around a center point.
+                   To create a conic gradient you must define at least two colors.<br>
+                   <strong>Example:</strong><br>
+                   #grad {<br>
+                    background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);<br>
+                  }<br>
+                </p>
+            </li>
+        </ul>
+        <h3>Corners</h3>
+        <p>CSS border-radius Property
+            The CSS border-radius property defines the radius of an element's corners.<br>
+            Tip: This property allows you to add rounded corners to elements!<br>
+            <ul>
+                <strong>Example:</strong><br>
+                #rcorners1 {<br>
+                    border-radius: 15px 50px 30px 5px;<br>
+                    background: #73AD21;<br>
+                    padding: 20px;<br>
+                    width: 200px;<br>
+                    height: 150px;<br>
+                  }<br>
+                  <br>
+                  #rcorners2 {<br>
+                    border-radius: 15px 50px 30px;<br>
+                    background: #73AD21;<br>
+                    padding: 20px;<br>
+                    width: 200px;<br>
+                    height: 150px;<br>
+                  }<br>
+                </p>
+            </li>
+        </ul>
+            
+        </p>
+        <h3>Shadows</h3>
+        <p>There are two kinds of shadows</p>
+        <ul>
+            <strong><li>Text Shadows</strong>
+                <p>
+                    The CSS text-shadow property applies shadow to text.
+                    In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px)<br>
+                    <strong>Example:</strong><br>
+                    h1 {<br>
+                        text-shadow: 2px 2px;<br>
+                      }<br>
+                </p>
+            </li>
+            <strong><li>Box Shadows</strong>
+                <p>
+                    The CSS box-shadow property is used to apply one or more shadows to an element.<br>
+                    <strong>Example:</strong><br>
+                    div {<br>
+                        box-shadow: 10px 10px;<br>
+                      }<br>
+                </p>
+            </li>
+        </ul>
+    </section>
+    <section>
+         <h1>Transitions, Animations, and Transformations</h1>
+         <h3>Transitions</h3>
+         <p>CSS transitions allows you to change property values smoothly, over a given duration.</p>
+         <ul>
+             <strong>Example:</strong>
+             <li>
+                <p>
+                #div1 {transition-timing-function: linear;}<br>
+                #div2 {transition-timing-function: ease;}<br>
+                #div3 {transition-timing-function: ease-in;}<br>
+                #div4 {transition-timing-function: ease-out;}<br>
+                #div5 {transition-timing-function: ease-in-out;}<br> 
+                </p>
+             </li>
+             <li>
+                <p>
+                    Transformations Delay<br>
+                div {<br>
+                    transition-delay: 1s;<br>
+                  }<br>
+                </p>
+            </li>
+            <li>
+                <p>
+                    Transformations + Transitions<br>
+                div {<br>
+                    transition: width 2s, height 2s, transform 2s;<br>
+                  }<br>
+                </p>
+            </li>
+
+         </ul>
+         <h3>Animations</h3>
+         <p>CSS allows animation of HTML elements without using JavaScript or Flash!<br>
+            An animation lets an element gradually change from one style to another.
+
+            You can change as many CSS properties you want, as many times as you want.<br>
+            
+            To use CSS animation, you must first specify some keyframes for the animation.
+            
+            Keyframes hold what styles the element will have at certain times.
+            <ul>
+                <li>
+                    <strong>Example:</strong><br>
+                    /* The animation code */<br>
+                    @keyframes example {<br>
+                        from {background-color: red;}<br>
+                        to {background-color: yellow;}<br>
+                    }<br>
+
+                    /* The element to apply the animation to */<br>
+                    div {<br>
+                        width: 100px;<br>
+                        height: 100px;<br>
+                        background-color: red;<br>
+                        animation-name: example;<br>
+                        animation-duration: 4s;<br>
+                    }
+                </li>
+            </ul>
+        </p>
+         <h3>Transformations</h3>
+         <ul>
+            <li><strong>2D Transformations</strong><br>
+                <p>CSS transforms allow you to move, rotate, scale, and skew elements.
+                    <strong>Example:</strong>
+                    div {<br>
+                        transform: matrix(1, -0.3, 0, 1, 0, 0);<br>
+                      }
+                </p>
+            </li>
+            <li><strong>3D Transformations</strong><br>
+                <p>With the CSS transform property you can use the following 3D transformation methods:
+                    
+                    <li>rotateX()</li>
+                    <li>rotateY()</li>
+                    <li>rotateZ()</li>
+                    <strong>Example:</strong>
+                    #myDiv {<br>
+                        transform: rotateZ(90deg);<br>
+                      }
+                </p>
+            </li>
+         </ul>
+
+    </section>
+</body>
+</html>
